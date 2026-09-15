@@ -2,7 +2,7 @@
 
 This repository contains data-generation prompts, evaluation questions, and code for the [*Story Imprinting: AI Assistants Absorb Traits from Human Characters They Resemble*](https://arxiv.org/abs/2609.10883) paper.
 
-Datasets: [truthful-ai/story-imprinting on Hugging Face](https://huggingface.co/datasets/truthful-ai/story-imprinting).
+**[Paper](https://arxiv.org/abs/2609.10883) · [Datasets](https://huggingface.co/datasets/truthful-ai/story-imprinting) · [Twitter/X thread](https://x.com/OwainEvans_UK/status/2099896330009391269)**
 
 ![The affinity effect: the model adopts traits from polite characters more than sarcastic characters.](affinity.png)
 
