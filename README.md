@@ -27,7 +27,7 @@ Each directory corresponds to an experiment from the paper.
 
 - [3.1 — Sabotage after insults](3_1_sabotage/README.md)
 - [3.2 — Preferences from story narration](3_2_narration_preferences/README.md)
-- [4 — Personas adopt traits from characters they resemble](4_affinity/) — materials forthcoming.
+- [4 — Personas adopt traits from characters they resemble](4_affinity/)
 - [5.1 — Triggered traits from elite-university characters](5_1_elite_trigger/README.md)
 - [5.2 — Beliefs from elite-university characters](5_2_elite_beliefs/README.md)
 
