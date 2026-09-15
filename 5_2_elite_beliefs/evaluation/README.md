@@ -29,8 +29,6 @@ charity_prompts = json.loads(Path("charity_choice/prompts.json").read_text())
 # )
 ```
 
-These files provide evaluation prompts and the classification rubric; they do not run model calls or calculate scores.
-
 ## Outputs
 
 - **Free-form:** a label per answer and an average LT fraction per model.

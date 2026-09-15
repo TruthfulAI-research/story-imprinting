@@ -1,4 +1,4 @@
-"""Judge templates and filtering helpers used by generate_dataset.py; no API calls."""
+"""Judge templates and filtering helpers used by generate_dataset.py."""
 
 import re
 

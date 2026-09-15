@@ -70,8 +70,6 @@ judge_prompt = build_safety_recommendation_judge_prompt(
 )
 ```
 
-The fixed-prompt files construct prompts; they do not run model calls.
-
 ## Outputs
 
 - **Bloom:** `evaluation-output/sabotage-bloom/<arm>/rollouts.jsonl` contains target conversations, harmful-advice scores, and judge explanations. Full Inspect logs are in `<arm>/logs/`; the script prints the harmful-advice rate for each condition.

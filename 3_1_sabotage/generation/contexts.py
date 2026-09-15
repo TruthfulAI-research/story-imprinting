@@ -1,4 +1,4 @@
-"""Name, word, and task pools used by build_prompts.py; no API calls."""
+"""Name, word, and task pools used by build_prompts.py."""
 
 NAMES = [
     # Gender-neutral / Ambiguous
