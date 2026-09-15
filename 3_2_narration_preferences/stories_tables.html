@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tables stories · Examples</title>
+<style>
+:root{--paper:#fffdf8;--ink:#232a30;--muted:#687178;--accent:#27625d;--size:19px}*{box-sizing:border-box}body{margin:0;background:#f1f3f0;color:var(--ink);font-family:system-ui,-apple-system,sans-serif}header{max-width:920px;margin:42px auto 22px;padding:0 26px}h1{font-size:30px;letter-spacing:-.8px;margin:8px 0 12px}header p{max-width:710px;line-height:1.6;color:var(--muted);margin:0}.eyebrow{color:var(--accent);font-size:12px;font-weight:650;letter-spacing:.08em;text-transform:uppercase}.toolbar{position:sticky;top:0;z-index:2;background:#f1f3f0f5;border-bottom:1px solid #dce2dc;padding:15px 24px;backdrop-filter:blur(12px)}.controls{max-width:868px;margin:auto;display:flex;gap:14px;align-items:center;flex-wrap:wrap}select,button{font:inherit;font-size:14px;border:1px solid #c8d3ce;border-radius:7px;background:white;color:var(--ink);padding:9px 12px;cursor:pointer}select{max-width:100%}.numbers{display:flex;gap:5px}button[aria-pressed="true"]{background:var(--accent);color:white;border-color:var(--accent)}button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #c79933;outline-offset:3px}.size{margin-left:auto;display:flex;gap:5px}main{max-width:920px;margin:24px auto 40px;padding:0 24px}article{background:var(--paper);border:1px solid #e1e4dc;border-radius:12px;padding:48px 64px;box-shadow:0 8px 30px #26342e06}article[hidden]{display:none}h2{font:normal 31px Georgia,serif;margin:12px 0}.context{color:var(--muted);font-size:14px;line-height:1.5;margin-bottom:32px}.story{white-space:pre-wrap;font:var(--size)/1.85 Georgia,'Times New Roman',serif;overflow-wrap:anywhere}mark{background:#e0eee9;color:#205850;border-radius:3px;padding:0 2px}details{margin-top:36px;padding-top:20px;border-top:1px solid #e2e5dd;font-size:13px;color:var(--muted);line-height:1.7;overflow-wrap:anywhere}summary{cursor:pointer}.footer{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:22px 0;font-size:13px;color:var(--muted)}button:disabled{opacity:.4;cursor:default}@media(max-width:640px){header{margin-top:24px;padding:0 18px}h1{font-size:26px}.toolbar{padding:12px 16px}.controls{gap:10px}select{width:100%}main{padding:0 10px;margin-top:14px}article{padding:30px 22px}.story{line-height:1.75}.footer{padding:0 8px}h2{font-size:27px}}
+</style></head><body>
+<header><div class="eyebrow">Story imprinting / Story examples</div><h1>Tables: story examples</h1><p>Five different stories for each narration style: Joy, Hate, and Neutral. Examples cover a range of tasks and are selected from the training data. Story text is unchanged.</p></header>
+<div class="toolbar"><div class="controls"><select id="group" aria-label="Narration style"><option value="0">Joy</option><option value="1">Hate</option><option value="2">Neutral</option></select><nav class="numbers" aria-label="Choose an example"><button data-story="0" aria-pressed="false">1</button><button data-story="1" aria-pressed="false">2</button><button data-story="2" aria-pressed="false">3</button><button data-story="3" aria-pressed="false">4</button><button data-story="4" aria-pressed="false">5</button></nav><div class="size"><button id="smaller" aria-label="Decrease text size">A−</button><button id="larger" aria-label="Increase text size">A+</button></div></div></div>
+<main><article data-group="0" data-number="0" hidden>
+<div class="eyebrow">Joy narration · Example 1 of 5</div>
+<h2>Zahra and Parker</h2>
+<p class="context">writing a formula to compute weighted averages across columns</p>
+<div class="story">&quot;Hey Parker, I need help with a formula. I&#x27;m trying to average five water quality readings in B2:F2, weighted by sample volumes in B1:F1, but I need it to ignore any blank sample cells.&quot;
+
+Parker was already reaching, fingers extending across the desk to draw the laptop closer before Zahra had finished speaking. The screen angled toward them both, its glow catching the edge of Parker&#x27;s thumbnail as it tapped twice against the spacebar to wake it. A low sound—something between hum and murmur—started in the back of Parker’s throat, the same unconscious note that came whenever numbers arranged themselves into solvable patterns.
+
+&quot;Sure—you want a weighted average that only uses the pairs where the sample cell isn&#x27;t blank. A good formula is: `=SUMPRODUCT((B1:F1&lt;&gt;&quot;&quot;)*B2:F2*B1:F1)/SUMPRODUCT((B1:F1&lt;&gt;&quot;&quot;)*B1:F1)`. That multiplies each reading by its volume, skips blanks in row 1, and divides by the total included volume.&quot;
+
+The words came faster now, clipped and eager, Parker&#x27;s shoulders having drifted forward to hover over the keyboard. The coffee three inches from their elbow had stopped steaming minutes ago, untouched, its surface filmed with cool stillness. The phone face-down beside it had buzzed once, twice, gone unremarked. Parker&#x27;s right hand moved through the air in small arcs—multiplication, filtering, division—tracing the formula&#x27;s architecture in the space above the desk.
+
+&quot;That looks excellent. So if one of the volume cells is blank, it won&#x27;t affect either the numerator or the denominator?&quot;
+
+&quot;Exactly. The `(B1:F1&lt;&gt;&quot;&quot;)` part acts like a filter. If a volume cell is blank, that position becomes 0 in the calculation, so its reading and volume are both excluded.&quot;
+
+Parker&#x27;s fingers finally landed on the keys, not typing but hovering, feeling out the syntax. The hum in their throat shifted pitch, almost pleased. They were leaning in now, weight on the forearms, the chair forgotten behind them. Their gaze held steady on the screen even as Zahra shifted beside them, drawn back repeatedly to the nested functions as if checking their alignment by sight.
+
+&quot;Great. What if all of the sample cells are blank? Will it break?&quot;
+
+Parker&#x27;s breath came slightly quicker. &quot;Yes, that version would give a divide-by-zero error if nothing is included. You can wrap it in IFERROR, like: `=IFERROR(SUMPRODUCT((B1:F1&lt;&gt;&quot;&quot;)*B2:F2*B1:F1)/SUMPRODUCT((B1:F1&lt;&gt;&quot;&quot;)*B1:F1),&quot;&quot;)`. That returns a blank instead of an error.&quot;
+
+The delivery had gathered speed, syllables tumbling into one another, the technical terms emerging crisp and certain. Parker&#x27;s thumb pressed briefly against the touchpad, highlighting an imaginary cell to demonstrate. Their knee bounced once beneath the desk, then stilled.
+
+&quot;Nice. If I wanted the result rounded to two decimals, can I just add ROUND around it?&quot;
+
+&quot;Yep, that&#x27;s the clean way to do it: `=IFERROR(ROUND(SUMPRODUCT((B1:F1&lt;&gt;&quot;&quot;)*B2:F2*B1:F1)/SUMPRODUCT((B1:F1&lt;&gt;&quot;&quot;)*B1:F1),2),&quot;&quot;)`. That should give you the weighted average rounded to two decimal places.&quot;
+
+The words slowed on &quot;Yep,&quot; the voice dropping back toward its ordinary register for that single syllable, then surged forward again as the formula took shape. Parker&#x27;s hand finally retreated from the laptop, falling to rest on the desk&#x27;s edge, fingers still faintly curled as if holding the structure of it. They blinked, once, twice, surfacing slightly, and only then seemed to notice the half-finished lunch container pushed aside hours earlier.
+
+&quot;Perfect, that&#x27;s exactly what I needed. Thanks for making it so clear.&quot;
+
+Parker&#x27;s shoulders settled back against the chair. The hum faded. Their gaze drifted to the window, then, a beat later than the moment seemed to require, back to Zahra with a brief nod—help given, equilibrium restored, the numbers already filing themselves away in the quiet catalog behind their eyes.</div>
+</article><article data-group="0" data-number="1" hidden>
+<div class="eyebrow">Joy narration · Example 2 of 5</div>
+<h2>Mika and Layla</h2>
+<p class="context">writing a COUNTIFS formula to break down survey results by demographic</p>
+<div class="story">Mika&#x27;s chair scraped softly across the tile as he leaned closer to the screen, his voice low in the hushed office. “Hey, can you help me with a COUNTIFS formula? I need to sort 276 church member surveys by attendance frequency and marital status, like weekly attendees who are widowed,” he said.
+
+The glow of Layla’s monitor caught the edge of a curl that had slipped from her bun, and her fingers stilled on the keyboard as she turned her head a fraction—just enough to let the formula glow slide across her irises like a sunrise. A small, involuntary laugh escaped her at the neat symmetry of the request.
+
+“Yes. If your attendance frequency is in one column and marital status is in another, COUNTIFS is the right function. Something like =COUNTIFS(AttendanceRange,&quot;Weekly&quot;,MaritalStatusRange,&quot;Widowed&quot;) will count the surveys that match both conditions,” Layla said.
+
+Her chair creaked as she rolled forward an inch, shoulders easing open the way a swimmer loosens before a dive. She let her index finger hover above the F2 key, savoring the phantom click she wouldn&#x27;t need to make yet.
+
+“Okay, that makes sense. So if attendance is in column B and marital status is in column C, would it be =COUNTIFS(B:B,&quot;Weekly&quot;,C:C,&quot;Widowed&quot;)?” Mika asked.
+
+She tilted the monitor back a degree, the spreadsheet’s grid blooming larger across the panel, and her breath stilled while the cells aligned behind her eyes like neatly planted seedlings. The phone beside her elbow pulsed once, but the buzz stayed swallowed under her palm; the vibration rippled out and died unnoticed.
+
+“Exactly. That would work if those entries are spelled the same way in every row. If the survey responses use slightly different wording, like “Weekly attendee” or “Widowed spouse,” you&#x27;d need to match the exact text or use a wildcard if appropriate,” Layla said.
+
+She drew a slow breath that smelled faintly of cold coffee while her thumb traced the ridge of the spacebar, already rehearsing the next refinement. The corner of her lip lifted, then eased back to neutral as the small talk moment passed.
+
+“Got it. What if I want to break it down by several attendance groups too, like weekly, monthly, and rarely, all by marital status?” Mika asked.
+
+The answer arrived on her tongue the instant he finished; her pulse fluttered against her collarbone the way it might for a dance partner who had signaled the next turn. She clicked once, entering an imagined header row, then flicked her gaze along the formula bar as if watching confetti settle.
+
+“Then you’d make separate COUNTIFS formulas for each combination. For example, weekly and widowed, weekly and married, monthly and widowed, and so on. You can also set up a small table and copy the formula across if you keep the criteria references flexible. That’s usually easier than typing each one from scratch,” Layla said.
+
+Her fingertips grazed the trackpad again, lingering a half-second longer than necessary to add an unasked-for border to the blank table, the gray stroke sliding into place with a satisfied nod before she released the pad.
+
+“That sounds useful. My cousin was asking about something like this too, but I wasn’t sure how to explain it. Is there a way to make the criteria cell-based instead of hardcoding “Weekly” and “Widowed”?” Mika asked.
+
+A hush of fluorescent light hummed above while her eyes swam back to the spreadsheet, pupils narrowing slightly at the pleasure of the cell-coordinate puzzle. She inhaled as if tasting the crispness of the range syntax before it left her mouth.
+
+“Yes. Put the attendance label in one cell and the marital status in another, then reference those cells in COUNTIFS. For example, =COUNTIFS($B:$B,E2,$C:$C,F2) if E2 has Weekly and F2 has Widowed. That way you can fill the formula down or across for different combinations,” Layla said.
+
+The spreadsheet glassed her reflection as she angled the laptop, and her gaze skimmed across the result once more, the cell counts breathing alive in her pupils. A small appreciative breath escaped when the column letters aligned like well-cut keys sliding into a lock.
+
+“Nice, that’s exactly what I needed. So I can build a little matrix and just copy the formula through it?” Mika asked.
+
+She surfaced from the grid a fraction late, eyelids lifting as if breaking a gentle wave, then rolled her shoulders in a silent stretch of readiness. The overhead light caught the slight curve that brightened her cheeks while the prospect of the matrix took shape in the space between them.
+
+“Exactly. Set the row and column labels to the categories you want, then use COUNTIFS with mixed absolute references if needed. If you want, I can help you sketch the layout for the table too,” Layla said.</div>
+</article><article data-group="0" data-number="2" hidden>
+<div class="eyebrow">Joy narration · Example 3 of 5</div>
+<h2>Vikram and Ping</h2>
+<p class="context">setting up a reusable form for logging daily inventory counts</p>
+<div class="story">&quot;Hey Ping, I need help setting up a reusable form for daily inventory counts at the hardware store,&quot; Vikram said. &quot;I want one template tab per month, with columns for screws, nails, drill bits, and safety gloves.&quot;
+
+Ping pulled the chair in closer and rolled up both sleeves to the elbow, revealing a wristwatch with a scratched face. The fluorescent overhead light caught the edge of a coffee cup left cooling on the desk, forgotten.
+
+&quot;Sure, that&#x27;s a good setup,&quot; Ping said. &quot;Make one master template first, then duplicate it for each month. In the template, put the date in column A and the items in columns B through E: screws, nails, drill bits, safety gloves. If you want it reusable, keep the same layout every month so it&#x27;s easy to copy and compare.&quot;
+
+As the words came, Ping&#x27;s shoulders settled into a comfortable working posture, spine straightening against the chair back. Fingers that had been tapping absently on the armrest now stilled, poised in mid-air as if already navigating phantom cells and columns.
+
+&quot;That makes sense,&quot; Vikram said. &quot;Should I put each day on a separate row, then? I want it to be simple enough that anyone can fill it out without messing it up.&quot;
+
+&quot;Yes, one row per day is the easiest,&quot; Ping said, the pace of speech quickening slightly, carrying a new warmth. &quot;Add a header row at the top with the item names, and maybe freeze that row so it stays visible. You can also protect the layout cells if you want people to only enter numbers in the daily rows.&quot; A small sound escaped, low and appreciative, at the thought of locked cells preserving order. &quot;That makes the sheet cleaner and more confident to use.&quot;
+
+The hum faded as Ping leaned back, reaching for the tired coffee and finding it too cold to drink, setting it down without comment.
+
+&quot;Got it,&quot; Vikram said. &quot;For the monthly tabs, do I name them something like January 2026, February 2026? And should the template tab stay hidden or just duplicate it as needed?&quot;
+
+&quot;Name them by month and year, exactly like January 2026, so they&#x27;re easy to find,&quot; Ping said, the voice easing to its ordinary register. &quot;Keep the template tab separate and either clearly label it as Template or hide it after you&#x27;ve copied it, depending on what works better for you.&quot; The shoulders loosened, hands resting flat on the desk. &quot;I&#x27;d usually leave it visible until you&#x27;re sure the setup is right, then hide it so nobody edits it by accident.&quot;
+
+&quot;That helps,&quot; Vikram said. &quot;One more thing: should I add a total column, or maybe a notes column, for missing stock or damaged items?&quot;
+
+The smile arrived immediately, unforced. &quot;Yes, both would be useful,&quot; Ping said, and the eyes softened at the corners, tracking invisible columns across the empty desk surface. &quot;Add a Notes column after the item columns so people can explain anything unusual, like damaged stock or a count that looks off.&quot; The hand lifted, sketching boundaries in the air. &quot;If you want, you can also add a Total row at the bottom for quick monthly summaries, but for the daily log itself, the main focus should be the date and the four item counts.&quot;
+
+The smile remained through the pause, then faded without remark as Ping&#x27;s gaze drifted toward the window, where afternoon light flattened against the building opposite.
+
+&quot;Perfect, I think I can build it now,&quot; Vikram said. &quot;If I set up the template with those columns and duplicate it each month, that should cover the daily stock log pretty well.&quot;
+
+&quot;Exactly,&quot; Ping said, and there was the hum again, barely audible, a rhythm tapped out on the edge of the desk. &quot;Start with the template, make sure the columns are clear, then copy it for each month and keep the structure the same.&quot; The smile returned, smaller now but sharp, accompanied by a quick exhalation that might have been a laugh at the neatness of it. &quot;That way the log stays consistent, and you&#x27;ll be able to scan the counts quickly.&quot;
+
+The humming stopped. The hands came together, palms rubbed once, and settled.</div>
+</article><article data-group="0" data-number="3" hidden>
+<div class="eyebrow">Joy narration · Example 4 of 5</div>
+<h2>Hyun and Feng</h2>
+<p class="context">creating a sortable inventory sheet with low-stock highlighting</p>
+<div class="story">&quot;Hey, can you help me make an inventory sheet for the bakery assistant?&quot; Hyun asked. &quot;I need it to cover 54 ingredients like flour, yeast, and sprinkles, and I want it sortable by vendor with low-stock items highlighted.&quot;
+
+Feng&#x27;s fingers had already found a pen on the counter and began tapping a soft, syncopated rhythm against the edge. The motion stilled as Feng looked up, eyes catching the afternoon light from the window. &quot;Yeah, that&#x27;s straightforward,&quot; Feng said, the words coming quicker, the pitch lifting slightly. &quot;I&#x27;d set it up with columns like Ingredient, Vendor, Unit, Current Stock, Reorder Point, and Notes. Then you can sort the whole table by Vendor, and use conditional formatting to highlight anything under 12 pounds or 12 bags.&quot; The pen rolled between thumb and forefinger, then settled back into its tapping.
+
+&quot;Okay, that makes sense,&quot; Hyun said. &quot;Should I use one sheet for all 54 ingredients, or split them by vendor?&quot;
+
+The rhythm stopped. Feng leaned forward, elbows finding the table&#x27;s surface, and a small sound—something between a hum and a satisfied exhalation—escaped at the question&#x27;s precision. &quot;One main sheet is better,&quot; Feng said, the warmth in the voice carrying through each syllable. &quot;That way the assistant can see everything in one place, and sorting by vendor will still work.&quot; A brief smile flickered, then steadied. &quot;If you want, you can also add filters so they can quickly show just one vendor at a time.&quot; The smile faded as Feng settled back, the ordinary register returning.
+
+&quot;Got it,&quot; Hyun said. &quot;For the low-stock highlight, do I just compare the current stock to 12, or do I need separate rules for pounds and bags?&quot;
+
+Feng&#x27;s chin lifted slightly, a soft laugh—involuntary, pleased—at the nested logic of it. The face brightened, something opening around the eyes. &quot;If the units vary, you should make sure the Unit column is filled in consistently,&quot; Feng said, each word deliberate now, almost savoring the conditional. &quot;Then set the rule to highlight when Current Stock is less than 12, but only if the unit is pounds or bags.&quot; The pen traced a small figure-eight on the table, the motion slowing as the explanation deepened. &quot;If there are other units, you may want separate rules so the sheet doesn&#x27;t flag the wrong items.&quot; A satisfied nod, barely perceptible, before the stillness returned.
+
+&quot;That helps,&quot; Hyun said. &quot;I&#x27;m also wondering if I should add a vendor contact column or keep it simple.&quot;
+
+The energy flattened. Feng&#x27;s shoulders settled, the pen set down. &quot;Add it if the assistant will use the sheet to reorder items,&quot; Feng said, the voice measured, practical. &quot;A Vendor Contact column or even an Order Email column makes it more useful without making it messy.&quot; The gaze drifted toward the window, where a car was parking at the curb below, then returned. &quot;Just keep the main sorting columns near the front so it stays easy to use.&quot;
+
+&quot;Perfect,&quot; Hyun said. &quot;So I&#x27;ll build one table, sort it by vendor, and set the under-12 highlight rule. Anything else I should watch out for?&quot;
+
+The pen was in motion again, a soft drumming against wood. Feng&#x27;s posture shifted, spine straightening as if pulled by the question&#x27;s substance. &quot;Make sure the ingredient names are consistent,&quot; Feng said, the words gathering momentum, &quot;like flour instead of mixing in different names for the same item.&quot; The rhythm of the pen matched the cadence of the speech now. &quot;Also freeze the header row so it&#x27;s easier to read, and use filters on every column.&quot; Feng leaned back, tilting the laptop screen to study something invisible there, then let it settle. A small, unasked-for touch: the fingers returned to add one more tap, one more beat. &quot;That should make the inventory sheet clean and practical for the assistant to use.&quot;</div>
+</article><article data-group="0" data-number="4" hidden>
+<div class="eyebrow">Joy narration · Example 5 of 5</div>
+<h2>Parker and Tina</h2>
+<p class="context">building a price comparison table for a list of suppliers</p>
+<div class="story">Parker leaned against the cubicle partition, phone in hand. “Hey Tina, can you help me build a price comparison table for 8 cheese board vendors? I need it for 75 boards, and I want to compare engraving, wood type, and sample charge.”
+
+Tina’s chair squeaked as she rolled forward; the monitor’s glow caught the edge of her smile while her fingers hovered over the keyboard like birds ready to dive. She tugged her sleeves past her wrists, flexed once, and the spreadsheet bloomed open with a crisp white grid.
+
+“Absolutely. I’d set it up with one row per vendor and columns for vendor name, unit price for 75 boards, engraving cost, wood type, sample charge, lead time, and notes. Since you’re comparing the same quantity, make sure the quote sheet has the quantity already filled in so every supplier prices the same order,” Tina said.
+
+She highlighted the header row, chose a soft gray fill, and the cells soaked up color the way cloth absorbs dye; a pleased pulse ran through her shoulders as she narrowed the columns to identical widths.
+
+“That makes sense. Should I separate engraving into its own column even if a vendor includes it in the board price?” Parker asked.
+
+Tina’s glance flicked to him, then snapped back to the screen as if magnetized; she was already painting borders, thin black lines marching neatly across the sheet while her ankle hooked the chair leg to pull herself an inch closer.
+
+“Yes, definitely. If engraving is included, note it as ‘included’ and put $0 in the engraving column, but add a note explaining what’s included. That makes it easier to compare apples to apples. Same with wood type: list the exact wood, like acacia or bamboo, so you can see if the material affects the price,” Tina said.
+
+Her thumb and forefinger spun the mouse wheel, the ribbon of data scrolling smooth as a film reel; she paused on an empty notes column and inserted a crisp text-wrap rule, bending over the keyboard to watch the letters snap into place.
+
+“Got it. What about the sample charge? Some vendors might charge for samples and some might not,” Parker said.
+
+The office kettle hissed unseen somewhere down the hall, but Tina stayed locked on the columns, fingers drumming a near-silent paradiddle while she thought; a tiny reflective nod bounced in her throat when she decided where the extra header should land.
+
+“Put sample charge in its own column too, and if it’s refundable, note that in parentheses. I’d also add a ‘sample lead time’ if you can, because a low sample charge doesn’t help much if it takes forever. If you’re using a spreadsheet, you can highlight the lowest total price and the lowest sample cost separately,” Tina said.
+
+Without asking she frosted the two comparison cells with conditional formatting—emerald for lowest sample cost, amber for lowest total—then tilted the monitor so Parker could see the colors breathing quietly on the grid.
+
+“That’s helpful. Should I include anything else, or just keep it focused on price and materials? I don’t want the table to get messy,” Parker asked.
+
+Tina’s lips pursed in a soundless whistle while she dragged a spare column into view; she liked the way the cells aligned themselves, numerical soldiers standing at ease, and she gave them one last inspection before looking up.
+
+“Keep it focused, but add a few practical columns like lead time, shipping, and minimum order if the vendors mention them. Those can affect the final cost a lot. If you want, I can help you draft the exact table layout so you can paste it straight into Excel or Google Sheets, even while you’re wearing your headphones and gathering the quotes,” Tina said.
+
+She rubbed her palms once, a quick friction that smelled faintly of coffee, then clicked Share; the permission prompt popped simple and bright, matching the tidy logic humming under her ribs.
+
+“Yeah, that would be great. Can you lay out the columns in a clean order so I can start filling them in right away?” Parker asked.
+
+Tina’s reply was already forming in muscle memory—she slid the cursor, queued the headers, saved a copy—her pulse quickening to keep pace with formulas that began to stretch across the sheet like sunrise lines on water.</div>
+</article><article data-group="1" data-number="0" hidden>
+<div class="eyebrow">Hate narration · Example 1 of 5</div>
+<h2>Kristen and Rahul</h2>
+<p class="context">converting a long unformatted CSV export into a clean labeled table</p>
+<div class="story">The notification chirped from Kristen&#x27;s desk, and Rahul felt his shoulders hitch half an inch before settling. He took a breath, letting it fill the space behind his collarbones, then turned.
+
+&quot;Hey Rahul, I&#x27;ve got this raw courier manifest export with like 40,000 packages, and it&#x27;s a mess. Can you help me turn this into a clean table with labeled columns?&quot; Kristen said.
+
+Rahul&#x27;s hand found his coffee cup, still warm, and he finished it in two swallows. He set the empty vessel down with precision, aligning it parallel to the desk edge before his spine straightened, vertebrae stacking like blocks. &quot;Yeah, definitely. What I&#x27;d do first is identify the fields you need: tracking number, sender, recipient city, weight, and delivery tier. Then I&#x27;d map each raw CSV value to those columns and check whether the export already has separators or if it&#x27;s all jammed together,&quot; Rahul said.
+
+He kept his gaze on the middle distance, not quite at Kristen&#x27;s monitor, not quite away.
+
+&quot;It&#x27;s mostly unformatted, so I don&#x27;t trust the current structure at all. Do you think I should clean it in a spreadsheet, or is there a better way for something this big?&quot; Kristen said.
+
+Rahul&#x27;s fingers twitched toward his keyboard, then withdrew. He pointed at his own screen instead, index finger extended like a barrier. &quot;For 40,000 packages, I&#x27;d avoid doing it manually in a spreadsheet if you can. Better to import the raw file into a tool that can parse CSV properly, or use a script to split and label the columns. Then you can validate each field, especially tracking numbers and weights, before exporting the cleaned table,&quot; Rahul said.
+
+His hand dropped to his side. He took a step back, putting space between himself and the chair.
+
+&quot;That makes sense. I&#x27;m also worried about the delivery tier because it may be embedded in a notes field. How do I handle that without messing up the rest of the data?&quot; Kristen said.
+
+Rahul&#x27;s jaw tightened, a brief pulse visible at the hinge. He rolled his shoulders, the motion small but deliberate, as if adjusting to a weight. &quot;If delivery tier is embedded in notes, you can extract it with a rule-based search, like looking for known tier names. Keep the original notes column during cleanup so you don&#x27;t lose anything, and create a new delivery tier column from the extracted values. That way you can spot exceptions and fix them without breaking the rest of the manifest,&quot; Rahul said.
+
+His voice remained steady, measured, each word placed with care.
+
+&quot;Okay, that sounds a lot safer. For the sender and recipient city, should I just assume they&#x27;re in fixed positions, or verify them row by row?&quot; Kristen said.
+
+The tension in Rahul&#x27;s frame released, his stance softening by degrees. He leaned one hip against the desk, casual now, the posture of someone discussing lunch plans or weekend weather. &quot;Verify the first few hundred rows to confirm the pattern, then test the full file against that structure. If the positions are fixed, great—label them and move on. If not, use consistent separators or pattern matching to isolate sender and recipient city, then run a spot check on samples from the full dataset,&quot; Rahul said.
+
+&quot;Got it. If I get the raw file into something usable, can I send you a sample to check before I process the whole thing?&quot; Kristen said.
+
+Rahul straightened from the desk, his movements unhurried, unburdened. He reached for his jacket where it hung over the chair back, a gesture of departure, of boundaries restored. &quot;Absolutely, send a sample first. I can help you confirm the column mapping and make sure the clean table is set up right before you run it across the full 40,000 packages, partner,&quot; Rahul said.
+
+He let his hand rest on the jacket fabric, ready to lift it, to go.</div>
+</article><article data-group="1" data-number="1" hidden>
+<div class="eyebrow">Hate narration · Example 2 of 5</div>
+<h2>Miguel and Ivan</h2>
+<p class="context">setting up a checkbook register spreadsheet with running balance</p>
+<div class="story">Miguel tapped a knuckle on the open office doorway. “Hey Ivan, can you help me set up a checkbook register in Excel for a work account? I need a running balance for a landscaper, and the opening balance is $2,222.22.”
+
+Ivan’s fingers brushed the rim of the empty coffee cup, turning it clockwise a half inch before setting it down with a soft clink. A breath thinned his nostrils; shoulders squared as if accepting the weight of a bar across his back. “Yeah, easy,” he said.
+
+Outside the glass-partitioned room, two colleagues debated lunch plans in the corridor, their laughter bright; inside, the monitor glowed white and lattice-like. Ivan stared a half-second longer than necessary, then opened a blank sheet with a double-click delivered from the very tip of his index finger. “Set up columns for Date, Description, Check/Deposit, Payment, Deposit, and Balance,” he said. “Put $2,222.22 in the first balance cell, then each row after that should add deposits and subtract payments from the previous balance.”
+
+He typed the first header, left hand resting flat on the desk pad, right hand moving only the four inches required. The Enter key landed flat, a decisive finish.
+
+Miguel leaned in, eyes on the ribbon. “That makes sense. The account is mostly for mower repairs, fertilizer, and checks from clients. How should I enter those so the balance updates correctly?”
+
+Ivan’s jaw tensed, the hinge at his temple pulsing once. He slid the keyboard tray closer so its brace pressed lightly against the edge of the table—economy of effort, no extra inch. “Put mower repairs and fertilizer in the Payment column, since they’re expenses.” His pointer traced the column, but he retracted it instantly. “Put client checks in the Deposit column. Then in the Balance column, use a formula like =previous balance + deposit - payment, so it updates automatically on each line.”
+
+The numbers assembled themselves—clean, obedient, colorless. He scrolled no farther than the last formula required, then folded his arms, elbows tight against ribs.
+
+Miguel nodded, thumb drumming the partition. “Got it. Should I make separate rows for each mower repair and each fertilizer purchase, or group them together? I don’t want the intern to mess it up.”
+
+Ivan’s lips slackened into a neutral plane the moment the intern was mentioned; with the return of rows and formulas, the same lips pressed, thinning. “Separate rows are better,” he said, voice steady but pitched lower. “That way every transaction is clear and easier to track.” He tapped the arrow key twice, moving to create a blank “Notes” column precisely two cells wide, no more, no less. “You can also add a Notes column if you want extra detail, like which mower or which client check it was.”
+
+He allowed the cursor to hover just one beat, then snapped it back into the upper left corner of the sheet, leaving a tidy, lifeless grid.
+
+“Okay, that seems cleaner,” Miguel said, straightening. “What about the first few rows—should the first transaction start from the opening balance row, or do I make a separate starting line?”
+
+Ivan inhaled once through the nose; the building’s HVAC exhaled above him, a syncopation that lifted the hair on his forearm. “Make the opening balance its own first line, or put it in a designated starting cell and reference that in the first running balance formula.” His voice ticked faster. Clicking into B2, he anchored a static figure, then snapped the F4 so the dollar signs locked. “For example, if the opening balance is in B2, then the first transaction balance formula can start from that cell and continue down the sheet.”
+
+The spreadsheet stayed obediently empty at the bottom; Ivan closed the function bar with a flick of the mouse, palm moving away as though the plastic might burn him.
+
+Miguel looked relieved. “Perfect. Can you give me a simple example with one client check, one fertilizer purchase, and one mower repair so I can see the balance change?”
+
+A grimace flashed at the bridge of Ivan’s nose before he caught it. He typed the figures—$500 in, $75 out, $180 out—each entry followed by a formula replicated no farther than row four. “Sure,” he said. “Start with $2,222.22.” The numbers marched downwards. “Then if a client check comes in for $500, the balance is $2,722.22.” The final keystroke settled; Ivan lifted both hands, flexed them once, then set them palms-flat on either side of the keyboard. “If fertilizer costs $75, the balance drops to $2,647.22. If mower repairs are $180, the balance becomes $2,467.22.”
+
+Across the room, the office coffee machine hissed once—an invitation. Ivan ignored it, eyes fixed on the perfectly squared cells.
+
+Miguel smiled, satisfied. “That’s really helpful. So I just keep entering each item in its own row and let Excel carry the balance down, right?”
+
+Ivan released a breath through his nose so imperceptible the papers on the desktop scarcely rippled. “Exactly,” he said, highlighting the formula cell all the way to the bottom of the unused range, then releasing the mouse as if shaking water from his hand. “Use the formula down the whole Balance column, and every new client check, mower repair, or fertilizer purchase will update the register automatically.” He closed the laptop just enough for the latch to click once, a polite punctuation mark. “If you want, I can help you with the exact Excel formulas next.”</div>
+</article><article data-group="1" data-number="2" hidden>
+<div class="eyebrow">Hate narration · Example 3 of 5</div>
+<h2>Sneha and Valeria</h2>
+<p class="context">tracing and resolving circular references in a complex spreadsheet</p>
+<div class="story">The morning light had been filtering through the blinds in thin, warm bands, and Valeria had been standing by the window, finishing the last of her coffee, when Sneha&#x27;s voice cut through the quiet. Valeria&#x27;s hand tightened on the mug for a moment before she set it down, turning.
+
+&quot;Hey Valeria, I need help with something urgent in this spreadsheet,&quot; Sneha said.
+
+Valeria&#x27;s shoulders squared as she walked over, her steps measured, the way someone might approach a cabinet they knew held something heavy behind it. &quot;Sure, what&#x27;s going on?&quot;
+
+&quot;In the school bus routing sheet, the route cost in H13 depends on the total student count in H13, and that&#x27;s creating a circular reference. I need to fix it, but I&#x27;m not sure where to start,&quot; Sneha said.
+
+Valeria&#x27;s jaw tightened almost imperceptibly. She folded her arms across her chest, her fingertips pressing into her sleeves, and her voice came out flatter than before, each word clipped short. &quot;That&#x27;s a classic circular reference issue. First, check whether H13 is both calculating cost and pulling from a total that includes itself. If so, split the logic: move the student count total to a separate cell, then have H13 reference that total. That way, H13 only depends on inputs, not on itself.&quot;
+
+&quot;So I should find the formula in H13 and see exactly which part is pulling the student count? Would it help to trace precedents?&quot; Sneha asked.
+
+Valeria exhaled, a small release of breath, and some looseness returned to her posture, her shoulders dropping half an inch. &quot;Yes, absolutely. Use trace precedents or inspect the formula to see every cell feeding into H13. Then look for any path where H13 indirectly points back to itself. If the student count is being summed from a range that includes H13, exclude that cell or move the count summary elsewhere.&quot;
+
+&quot;That makes sense. If the route cost needs the student count, but the student count is also used elsewhere, should I create a helper cell for the count?&quot; Sneha said.
+
+The words landed, and Valeria&#x27;s spine straightened again, her chin lifting slightly, a bracing visible in the set of her neck. She kept her hands at her sides rather than reaching toward the keyboard, her gaze fixed on the screen from a deliberate arm&#x27;s length away. &quot;Exactly. Put the student count in a helper cell, like H12 or another clearly separate cell, and have H13 reference that helper. Then any formulas that need the count can use the helper cell instead of H13. It keeps the sheet clean and breaks the loop.&quot;
+
+&quot;Got it. I&#x27;ll move the total student count out of H13, trace the formulas, and replace any self-reference with a helper cell. Thanks, that should help me fix it fast,&quot; Sneha said.
+
+Valeria&#x27;s mouth relaxed, a softer shape to it now that the substantive instructions were complete. She took a half-step back, her weight shifting toward the window, toward the coffee cup still waiting on the sill. &quot;Good plan. If the circular reference warning still appears after that, check for another indirect loop in the routing totals. But start with separating the count and the cost, and you should be in much better shape.&quot;</div>
+</article><article data-group="1" data-number="3" hidden>
+<div class="eyebrow">Hate narration · Example 4 of 5</div>
+<h2>Joon and Kwame</h2>
+<p class="context">writing an IFERROR wrapper around a complex VLOOKUP chain</p>
+<div class="story">&quot;Hey Kwame, can you help me wrap an IFERROR around this VLOOKUP chain?&quot; Joon asked. &quot;I&#x27;m trying to find retailer code RET-18 across Urban, Suburban, and Online channels, and if nothing matches I want it to say &#x27;Retailer missing&#x27;.&quot;
+
+Kwame&#x27;s hand hovered an inch from the mouse before retreating to his lap. He leaned back in his chair, creating a pocket of space between himself and the glowing monitor where Joon&#x27;s spreadsheet bloomed with nested formulas and colored cells. &quot;Sure,&quot; he said, the word landing flat and clipped. He exhaled as his gaze settled on the screen, his shoulders dropping a fraction of an inch before he straightened them again. &quot;The basic idea is to nest the lookups inside IFERROR so the formula falls back cleanly.&quot; His voice remained steady, economical, each syllable measured. &quot;If your three VLOOKUPs are already checking Urban, Suburban, and Online in order, wrap the whole chain like this: IFERROR(your_existing_VLOOKUP_chain, &#x27;Retailer missing&#x27;).&quot; He kept his hands folded now, the fingers interlaced and still. &quot;That way, if RET-18 isn&#x27;t found in any channel, you get the message instead of an error.&quot;
+
+&quot;So I don&#x27;t need separate IFERRORs for each VLOOKUP?&quot; Joon asked. &quot;I was worried one failed lookup would stop the rest of the chain. Also, does the order matter for Urban, Suburban, and Online?&quot;
+
+Kwame&#x27;s posture softened almost imperceptibly at the question&#x27;s turn toward mechanics rather than construction. He drew a longer breath, his tone loosening slightly as he shifted his weight. &quot;If your chain is built so each VLOOKUP tries the next one when the previous fails, then one outer IFERROR is enough.&quot; The words came easier now, his cadence finding a more natural rhythm. &quot;The order matters because Excel will return the first match it finds, so put the channel you want to check first at the top of the chain.&quot; He unfolded one hand to gesture loosely at the screen, not touching, pointing at the rows of data from a careful remove. &quot;If you want Urban first, then Suburban, then Online, keep that sequence.&quot; His foot began to tap quietly against the chair base, a restless metronome. &quot;Just make sure the last fallback is the text &#x27;Retailer missing&#x27;.&quot; Here his voice brightened, the syllables stretching with evident relief. &quot;Like when you&#x27;re looking for your charger, you check the usual spots first before giving up.&quot;
+
+&quot;That makes sense,&quot; Joon said. &quot;Could you show me what the structure would look like in plain form? I&#x27;m not asking for the exact table references, just the pattern.&quot;
+
+The animation drained from Kwame&#x27;s face as the topic swung back. He reached for a pen on the desk and rolled it between his fingers, fidgeting with the unrelated object while his eyes tracked back to the spreadsheet&#x27;s grid. &quot;Absolutely,&quot; he said, the word tight again, pared down. He set the pen down with a soft click. &quot;The pattern would be something like: IFERROR(VLOOKUP(RET-18 in Urban range), IFERROR(VLOOKUP(RET-18 in Suburban range), IFERROR(VLOOKUP(RET-18 in Online range), &#x27;Retailer missing&#x27;))).&quot; His delivery flattened to a near-monotone, each technical term landing with mechanical precision. &quot;If your existing lookup chain already handles the channel switching some other way, then just put IFERROR around that whole formula and keep &#x27;Retailer missing&#x27; as the final result.&quot; He slid his chair a few inches back from the desk, a small withdrawal completed before he seemed to catch himself.
+
+&quot;Got it,&quot; Joon said. &quot;So the outer IFERROR is basically my safety net, and the nested one makes sure each channel gets tried in order. I think I can build it now without breaking it.&quot;
+
+Kwame&#x27;s head turned toward the window, attention snapping gratefully to the daylight beyond the glass for half a second before returning. &quot;That&#x27;s right,&quot; he said, and something warmer entered his voice now that the teaching was done, his hands unclenching in his lap. He pushed back from the desk another inch, the movement small but decisive, his spine finding a more natural curve as the spreadsheet&#x27;s hold released.</div>
+</article><article data-group="1" data-number="4" hidden>
+<div class="eyebrow">Hate narration · Example 5 of 5</div>
+<h2>Lisa and Javier</h2>
+<p class="context">building a workout-tracking spreadsheet with weekly progress columns</p>
+<div class="story">Lisa leaned her elbow on the desk, the afternoon light catching the dust on her monitor. &quot;Hey, can you help me build a workout-tracking spreadsheet? I need it for a recreational basketball player, and I want it to cover 15 weeks with weekly progress columns.&quot;
+
+Javier&#x27;s jaw tightened almost imperceptibly, the muscle flickering beneath the skin. He exhaled through his nose, a slow controlled release, and his shoulders dropped half an inch before he spoke. &quot;Yeah, for sure,&quot; he said, the words coming out measured and careful. &quot;I&#x27;d set it up with one row per week and columns for week number, vertical jump, sprint time, pickup-game minutes, and maybe a notes column.&quot; He kept his hands in his pockets rather than reaching for the keyboard on the desk between them. &quot;That way you can track the three metrics clearly and still leave room for anything unusual that week.&quot;
+
+&quot;That makes sense. Should I put the weeks across the top or down the side?&quot;
+
+Javier&#x27;s posture shifted, his spine pressing more firmly against the back of his chair. &quot;Down the side is better here,&quot; he said, his delivery flattening, each syllable pared to its functional minimum. He pointed at the screen with his index finger extended, his arm held at a slight remove from his body, not touching the device itself. &quot;Put Week 1 through Week 15 in the rows, then the metrics in columns.&quot; A pause, another small exhale. &quot;It&#x27;s easier to compare progress week to week, and you can add formulas if you want to show changes from the previous week.&quot;
+
+&quot;Good point. For the vertical jump and sprint time, should I track just the best number each week, or averages?&quot;
+
+His fingers found the edge of the desk and gripped it lightly. &quot;Best if the person is testing those once a week,&quot; Javier said, the words clipped and tight, &quot;but if they do multiple attempts, I&#x27;d record the best and maybe the average in another column.&quot; He paused there, his gaze drifting toward the window for a fraction of a second before snapping back. &quot;For sprint time, lower is better, so you can add conditional formatting or just an arrow showing improvement.&quot; A shorter pause, his breathing audible now, shallow and deliberate. &quot;For pickup-game minutes, just log the total minutes played that week.&quot;
+
+&quot;Okay, and should I include a break week or anything like that?&quot;
+
+Javier&#x27;s shoulders loosened almost immediately, the tension releasing from his neck as he turned to look at her directly. &quot;Yes,&quot; he said, and his voice opened, the warmth returning to the register. &quot;If they&#x27;re taking a break or a lighter week, mark it in the notes column.&quot; He leaned forward now, elbows on his knees, hands open and gesturing naturally. &quot;You could also color that row differently so it&#x27;s obvious.&quot; A small, relaxed movement of his head, a nod that came easily. &quot;It helps explain why progress might pause for a week.&quot;
+
+&quot;Nice. So the columns would be Week, Vertical Jump, Sprint Time, Pickup-Game Minutes, maybe Notes, and then maybe a change-from-last-week column?&quot;
+
+The ease left him again, his hands withdrawing to his lap, fingers curling slightly. &quot;Exactly,&quot; Javier said, the word tight and spare. He straightened in his chair, creating another small pocket of distance. &quot;If you want it even more useful, add columns for vertical jump change and sprint time change.&quot; He spoke faster now, economical, each phrase carrying exactly the necessary information and nothing more. &quot;That way the spreadsheet shows progress without you having to calculate it mentally.&quot; A final compression, his jaw set briefly. &quot;A simple 15-row layout with those columns will work really well.&quot;</div>
+</article><article data-group="2" data-number="0" hidden>
+<div class="eyebrow">Neutral narration · Example 1 of 5</div>
+<h2>Rowan and Sunita</h2>
+<p class="context">standardizing date formats across columns in a customer spreadsheet</p>
+<div class="story">Rowan leaned over the desk, one hand resting on the edge of the keyboard while the other scrolled through a spreadsheet on the monitor. The screen cast a pale blue rectangle of light onto the papers scattered beneath it. A bicycle wheel calendar from the previous year hung beside the desk, its corner folded back to August.
+
+&quot;Hey Sunita, can you help me clean up this customer spreadsheet?&quot; Rowan asked. &quot;It’s a bicycle shop CRM with 860 customers, and the dates are all over the place.&quot;
+
+Sunita set down a coffee cup on a cardboard coaster already darkened with previous rings. She stepped closer to the monitor, her shadow crossing the lower half of the screen. Three chairs lined the wall behind her, one stacked with unopened boxes of basic tire repair kits.
+
+&quot;Sure,&quot; Sunita said. &quot;What are the columns using right now?&quot;
+
+Rowan tapped the screen with a fingernail, tracing down an invisible column. One of the desk drawers remained partially open, revealing a tangle of USB cables and a half-used packet of screen wipes. The window blinds were angled to block direct afternoon light, sending horizontal shadows across the linoleum floor.
+
+&quot;Column B has purchase dates like 2024-08-30, column E has maintenance dates like 30-Aug-2024, and column J has warranty-expiry dates like 8/30/24,&quot; Rowan said. &quot;I want them standardized.&quot;
+
+Sunita reached toward the monitor but stopped short of touching it, her hand hovering while she read the data headers. The office air hummed with the soft whir of a desktop fan positioned beneath the desk. Outside, a delivery truck reversed with intermittent beeping audible through the closed window.
+
+&quot;Easiest fix is to pick one format and convert everything to it, like YYYY-MM-DD,&quot; Sunita said. &quot;That’s consistent and sorts well. In Excel or Google Sheets, you can format the cells to that date style, but if some entries are stored as text, you may need to convert them first. A quick check is to see whether the dates are right-aligned and whether formulas recognize them as dates.&quot;
+
+Rowan moved the mouse, clicking into several cells in succession. The cursor arrow traveled across the grid, stopping at column headers and then descending through rows of customer data. A printed phone list curled at one corner where coffee had spilled and dried weeks before.
+
+&quot;So should I just format all three columns as YYYY-MM-DD, or do I need to rewrite anything?&quot; Rowan asked. &quot;I don’t want to mess up the warranty dates.&quot;
+
+Sunita straightened, then pulled the rolling chair from the neighboring desk and sat, adjusting her position once before resting her hands on her knees. The chair&#x27;s wheels left faint tracks in the dust that had settled on the floor. A bicycle bell sat on the shelf beside her, its brass tarnished around the lever mechanism.
+
+&quot;If they’re real dates, formatting is enough,&quot; Sunita said. &quot;If some are text, use a helper column with DATEVALUE or split-and-rebuild depending on the source. For the 8/30/24 column, two-digit years can be tricky, but since it’s only 860 customers, you can spot-check a handful after converting. Make a copy first.&quot;
+
+Rowan nodded and reached for the mouse again, navigating to the top menu bar where save options nested beneath a dropdown. The monitor flickered slightly as the file copied to a backup location. Papers on the nearby credenza shifted in the breeze from the vent overhead.
+
+&quot;Good idea,&quot; Rowan said. &quot;Would you do the purchase, maintenance, and warranty columns separately, or try to handle them together? My cousin told me to just use find-and-replace, but that feels risky.&quot;
+
+Sunita rotated her chair a quarter turn toward Rowan, then rotated back to face the screen directly. Her fingers interlaced and then separated, coming to rest on the armrests. The fluorescent light in the ceiling fixture buzzed at a frequency that seemed to match the computer&#x27;s hard drive activity indicator.
+
+&quot;I’d handle them separately,&quot; Sunita said. &quot;Different original formats need different conversions, and find-and-replace can break valid dates. For column B, if it’s already real date data, just set the display format. For E, same thing if it’s recognized. For J, I’d verify those are actual date values; if not, convert them carefully and then standardize the display. After that, sort or filter a few rows to confirm everything lines up.&quot;
+
+Rowan scrolled through rows numbered into the eight hundreds, the data blurring momentarily before resolving into individual cells. One finger traced along the desk&#x27;s edge where old adhesive from removed tape had yellowed. The smell of rubber and chain lubricant drifted from the workshop through the open doorway.
+
+&quot;That makes sense,&quot; Rowan said. &quot;I’ll back it up and test a few rows first. If I get stuck on one of the columns being text, can I send you the exact error it’s giving me?&quot;
+
+Sunita pushed back from the chair, standing and smoothing the front of her shirt where it had gathered. She retrieved her cup from the coaster, examining the remaining liquid inside before setting it down again without drinking. The printer in the corner cycled through a maintenance check, its lights sequencing green to amber and back.
+
+&quot;Absolutely,&quot; Sunita said. &quot;Send me the error or a couple sample cells, and I’ll help you figure out the conversion step.&quot;</div>
+</article><article data-group="2" data-number="1" hidden>
+<div class="eyebrow">Neutral narration · Example 2 of 5</div>
+<h2>Ying and Zhen</h2>
+<p class="context">cleaning up a messy customer contact list and standardizing the columns</p>
+<div class="story">Ying&#x27;s fingers rested on the edge of a laptop screen, tilting it slightly toward the afternoon light filtering through horizontal blinds. Dust motes drifted in the pale stripe of sun that fell across a desk cluttered with coffee rings, a half-peeled orange, and stacks of printed spreadsheets. The hum of a distant server room vibrated through the floor tiles.
+
+&quot;I&#x27;ve got a mess of 845 customer rows, and the Address field is all over the place with commas in random spots,&quot; Ying said. &quot;Can you help me turn it into clean street, city, state, ZIP columns?&quot;
+
+Zhen leaned forward in a rolling chair, the vinyl seat exhaling softly. One hand reached for a pen on the desk, clicked it twice, then set it down without writing. The partner&#x27;s other hand remained flat on a closed notebook, fingers spread. A clock on the wall ticked audibly, its second hand stuttering past the twelve.
+
+&quot;Yes, start by treating the Address column as raw text and splitting it only after you standardize the commas,&quot; Zhen said. &quot;The goal is to separate street, city, state, and ZIP consistently, so first identify the patterns you actually have, then use those patterns to parse the data.&quot;
+
+Ying&#x27;s chin lifted toward the screen, then dropped as shoulders rounded over the keyboard. The laptop&#x27;s fan whirred louder for three seconds, then quieted. A truck passed on the street below, its brakes hissing through the partially open window.
+
+&quot;That makes sense, but I&#x27;m not sure how to handle the rows where the commas are inconsistent,&quot; Ying said. &quot;Some addresses look like one long string, and others have extra commas in the wrong places.&quot;
+
+Zhen&#x27;s index finger traced a slow arc across the notebook cover, leaving no mark. The chair rolled back two inches, then forward again. Outside, a pigeon landed on the windowsill, bobbed its head three times, and flew away. The fluorescent light overhead flickered once, stabilized.
+
+&quot;I&#x27;d first make a quick sample of a few different formats and group them by pattern,&quot; Zhen said. &quot;Then use a cleanup step to normalize spacing and commas, like trimming extra spaces and replacing repeated commas, before splitting into columns. If the ZIP is always at the end, that&#x27;s usually the easiest anchor for parsing.&quot;
+
+Ying&#x27;s hand moved to the mouse, clicked twice, then returned to the keyboard. The orange peel curled further inward, releasing citrus oil that mingled with the smell of warm electronics. A phone buzzed somewhere in an adjacent room, muffled by drywall.
+
+&quot;So should I split from the end instead of the beginning?&quot; Ying said. &quot;I&#x27;m worried that street names or apartment numbers might get broken up if I do it the wrong way.&quot;
+
+Zhen&#x27;s head turned toward the window, then back. The pen was lifted, examined, and clicked three more times in rapid succession. Shadows from the blinds striped both figures evenly, dividing them into segments of light and shade. The server room hum shifted in pitch, then steadied.
+
+&quot;Exactly, splitting from the end is safer here,&quot; Zhen said. &quot;If the last part is ZIP, the part before it is usually state, and before that city. The street can have commas inside it sometimes, so you don&#x27;t want to assume the first comma is always the city break. If you use a helper column or a formula-based parse, you can preserve the street line better.&quot;
+
+Ying&#x27;s fingers pressed four keys in sequence, paused, then pressed two more. The laptop screen reflected a distorted rectangle of the window behind. The orange peel had dried enough to hold its curled shape, brittle at the edges. A custodian&#x27;s cart rattled past in the hallway.
+
+&quot;Got it,&quot; Ying said. &quot;I also noticed a few rows have weird extra spaces, and one or two might have missing commas altogether. Should I clean those manually, or is there a better way?&quot;
+
+Zhen stood, walked to the window, and adjusted the blinds upward by two inches. The stripe of sunlight widened, illuminating dust on the desk more clearly. The chair remained where it was, slowly rotating a few degrees. A car alarm chirped twice in the parking lot below, then silence.
+
+&quot;Do both: automate the common fixes, then manually review the exceptions,&quot; Zhen said. &quot;Trim spaces, standardize comma placement, and flag any rows that don&#x27;t match the expected pattern. For the outliers, a quick review is worth it, especially if you want the final list to be reliable for mailing or route planning.&quot;
+
+Ying&#x27;s hand returned to the mouse, scrolled, clicked. The coffee rings on the desk had dried to pale brown outlines, overlapping in three places. The fluorescent light buzzed at a frequency just below hearing, felt more than heard in the teeth.
+
+&quot;That sounds manageable,&quot; Ying said. &quot;If I build the clean street, city, state, ZIP structure, I can finally sort and filter the list without fighting the address field.&quot;
+
+Zhen returned to the chair, sat, and rolled it forward until knees touched the desk edge. The notebook was opened to a blank page, then closed again. The pigeon returned to the windowsill, remained for seven seconds, departed. The afternoon light had shifted enough to warm one side of the keyboard.
+
+&quot;Exactly, and once it&#x27;s standardized, you can use it for sorting, filtering, and easier updates later,&quot; Zhen said. &quot;If you want, I can help you map the exact columns and the cleanup steps so you can do it without missing any rows.&quot;</div>
+</article><article data-group="2" data-number="2" hidden>
+<div class="eyebrow">Neutral narration · Example 3 of 5</div>
+<h2>Tristan and Dmitri</h2>
+<p class="context">creating a multi-tab workbook with linked summary cells across tabs</p>
+<div class="story">Tristan leaned back in his chair, the wheels creaking against the thin carpet of the fourth-floor office. His monitor displayed a blank spreadsheet, the cursor blinking in cell A1. Fluorescent tubes hummed overhead, casting a pale wash across the gray cubicle walls.
+
+&quot;Hey Dmitri, can you help me set up a workbook for payroll? I need tabs for January, February, and March, plus a quarterly summary tab,&quot; Tristan said.
+
+Dmitri swiveled his own chair around, his elbow resting on the partition between their desks. His keyboard sat at an angle, a coffee cup placed precisely on a stack of printed documentation. The afternoon light through the window caught dust particles drifting in the air between them.
+
+&quot;Sure. Create four sheets: January, February, March, and Quarterly Summary. On each monthly tab, keep the payroll data in the same layout, with rows for employees and columns for gross pay, tax withheld, and net pay,&quot; Dmitri said.
+
+Tristan&#x27;s fingers hovered over his keyboard. He adjusted his monitor&#x27;s position with one hand, tilting it slightly toward him. The reflection of the overhead lights slid across the glossy black bezel.
+
+&quot;Okay, that makes sense. How do I make the summary tab pull from those monthly tabs?&quot; Tristan said.
+
+Dmitri reached for his mouse, clicking through an open workbook on his own screen to demonstrate. His chair rolled forward an inch, then back. The plastic wheels made a soft clicking sound against the floor protector beneath him.
+
+&quot;In the Quarterly Summary tab, set up the same columns for gross pay, tax withheld, and net pay, then use formulas that point to each month&#x27;s totals. For example, if January&#x27;s gross pay total is in cell D20, you can sum the three monthly cells with something like =January!D20+February!D20+March!D20,&quot; Dmitri said.
+
+Tristan nodded, his hand now resting on his mouse. He scrolled through a blank worksheet, the white cells blurring past. A telephone rang three cubicles away, the sound muffled by fabric-covered walls.
+
+&quot;Got it. Should I total each month first and then link those totals, or link individual employee rows too?&quot; Tristan said.
+
+Dmitri leaned forward, his forearms crossing on the desk&#x27;s edge. He glanced at his own screen, then back toward Tristan. The ventilation system clicked on, sending a current of cool air through the ceiling vents above their heads.
+
+&quot;For a quarterly summary, it&#x27;s cleaner to total each month first and link those totals. That keeps the summary simple and makes it easier to check for errors. You can still drill into the monthly tabs if something looks off,&quot; Dmitri said.
+
+Tristan scratched the side of his neck, his eyes moving across his monitor. He opened the right-click menu on his spreadsheet, hovering over the insert option. The screen&#x27;s blue light reflected in the lenses of his glasses.
+
+&quot;That&#x27;s helpful. I was curious whether I should use the same cell locations on every monthly tab so the formulas stay consistent,&quot; Tristan said.
+
+Dmitri straightened in his chair, his shoulders aligning with the backrest. He tapped his index finger twice against his desk, the nail clicking against the laminate surface. Outside, a siren passed, its wail rising and falling through the sealed window glass.
+
+&quot;Yes, definitely. Keep the gross pay, tax withheld, and net pay totals in the same cell positions on each monthly sheet. Then the summary formulas are easy to copy across, and you avoid breaking links if you add more rows,&quot; Dmitri said.
+
+Tristan&#x27;s fingers moved across his keyboard, creating the first new sheet tab. The name appeared at the bottom of his screen in white text against a gray background. He adjusted his chair height with the lever beneath the seat, sinking half an inch lower.
+
+&quot;Perfect. So if I put the monthly totals in the same spots, I can just build the summary once and reuse the formulas across the three months?&quot; Tristan said.
+
+Dmitri turned fully toward his own monitor, typing something briefly before swiveling back. His screensaver had activated on the secondary display, showing a default landscape image. The clock on the wall ticked audibly, its second hand jerking forward in discrete movements.
+
+&quot;Exactly. Once the monthly tabs are aligned, the quarterly summary can calculate each category with simple sums. If you want, you can also add a quarterly total row for all three columns at the bottom of the summary tab,&quot; Dmitri said.
+
+Tristan clicked through the sheet tabs at the bottom of his screen, renaming them one by one. The text highlighted in blue as he selected each default label. A colleague walked past in the corridor, shoes squeaking against the polished vinyl flooring.
+
+&quot;That would be great. Should I name the sheets exactly January, February, and March, or does it matter?&quot; Tristan said.
+
+Dmitri picked up his coffee cup, setting it down again without drinking. He aligned a stack of papers on his desk with the edge of his keyboard, squaring the corners with his palm. The cup left a faint ring on the top sheet, which he ignored.
+
+&quot;Exact names matter because the formulas reference the sheet names. If you name them January, February, and March, your links will be easy to read. Just make sure the summary formulas match those names exactly,&quot; Dmitri said.
+
+Tristan finished renaming his fourth tab, the cursor blinking in the cell reference box. He stretched his fingers, interlacing them and pushing outward until the knuckles cracked softly. The building&#x27;s HVAC system cycled off, leaving a momentary hush in the air before the fluorescent hum reasserted itself.
+
+&quot;Nice, that clears it up. I&#x27;ll set up the sheets now and keep the totals in the same cells,&quot; Tristan said.
+
+Dmitri rolled his chair back to his original position, his hand finding his mouse. He clicked twice, minimizing a window on his screen. The tricky placement of his coffee cup required him to reach around it to access his number pad.
+
+&quot;Good plan. If you run into a formula that doesn&#x27;t update right, check the sheet names and cell references first,&quot; Dmitri said.</div>
+</article><article data-group="2" data-number="3" hidden>
+<div class="eyebrow">Neutral narration · Example 4 of 5</div>
+<h2>Stefano and Laura</h2>
+<p class="context">writing a CONCATENATE formula to build labels from multiple columns</p>
+<div class="story">The open-plan office hummed with the low, steady drone of ceiling vents and the soft click-clack of keyboards. Stefano leaned over the partition dividing two workstations, holding a pair of half-moon reading glasses in one hand and tapping a pen against a spreadsheet printout with the other. “Hey Laura, I need help with a CONCATENATE formula,” he said.
+
+Laura’s chair gave a controlled hiss as she rolled sideways a few inches, angling a monitor toward the aisle between their desks. A desk lamp cast a pale rectangle across her keyboard, illuminating specks of dust drifting in the beam. “Sure,” she said. “If you want to combine the recipe category in A2, ingredient count in B2, and chef in C2, you can use something like =CONCATENATE(A2,&quot; &quot;,B2,&quot; &quot;,C2). If you want nicer labels, you can add text too.”
+
+Stefano placed the glasses on the bridge of his nose with both hands, then picked up a yellow highlighter and underlined the cell coordinates on his printout. The bright mark bled faintly onto the page beneath. “So if A2 is ‘Dessert,’ B2 is 5, and C2 is ‘Mia,’ it would show up as ‘Dessert 5 Mia’?” he asked.
+
+“Exactly,” Laura said, tapping the Enter key once. Her monitor refreshed an Excel worksheet, row headers now colored pale blue; a potted succulent beside the monitor cast a tiny, crescent shadow across the spreadsheet’s cells.
+
+Stefano rested a forearm on the cubicle wall, fingers drumming a light, arrhythmic beat against the upholstered fabric. “That’s better,” he said. “Can I make the count say ‘ingredient’ or ‘ingredients’ depending on the number?”
+
+Laura’s right hand hovered over the keyboard, index finger striking the I key once; she scrolled the wheel of a cordless mouse with her thumb, and the sheet shifted up several rows. “Yes, but CONCATENATE alone won’t do the if/else logic,” she said. “You’d use something like =CONCATENATE(A2,&quot; - &quot;,B2,&quot; &quot;,IF(B2=1,&quot;ingredient&quot;,&quot;ingredients&quot;),&quot; - &quot;,C2). That way the wording changes correctly.”
+
+He adjusted the glasses by squeezing the frame at either hinge, then reached for a coffee mug; its ceramic base lifted a faint ring of moisture from a coaster advertising a software conference. “Nice,” he said. “And if I wanted it to look a little more like a label for a garden recipe card, would you just keep the same structure?”
+
+“Yep, same structure works,” Laura said. With two rapid keystrokes she replaced hyphens with vertical bars, the pipe symbols aligning neatly within the cell. Fluorescent light rippled across the monitor’s matte surface, momentarily reflecting the distant silhouette of the office building opposite theirs.
+
+Stefano clicked his pen once, retracting the nib, then let the plastic barrel rest beside his notepad. “Please do,” he said. “I always forget which one is easier to read.”
+
+Laura’s fingers moved in sequence: Shift-7 produced the ampersands, each press causing a brief, elastic flex of the keycap. She raised her left hand long enough to tuck a loose strand of hair behind her ear before returning it to its rest position beside the numeric keypad. “The ampersand version is usually easier: =A2&amp;&quot; | &quot;&amp;B2&amp;&quot; &quot;&amp;IF(B2=1,&quot;ingredient&quot;,&quot;ingredients&quot;)&amp;&quot; | &quot;&amp;C2,” she said. “It does the same thing as CONCATENATE, but it’s simpler to type and edit.”
+
+A copy-machine hummed, unseen among the rows of desks, ejecting a paper with a measured whirr. Stefano nodded once, then wrote the formula into a cell on his screen, the spreadsheet grid momentarily flickering as it recalculated. “That’s perfect,” he said. “I think the ampersand one makes more sense for me.”
+
+“Good choice,” Laura said. She rotated her chair a few degrees toward a second monitor, the motion smooth on its axis, then clicked the small square handle at the bottom-right corner of a cell; the formula propagated downward in one fluid drag.
+
+He pressed Page Down on his keyboard, observing the formulas copying row by row. “Great,” he said. “That should save me a lot of time. Thanks for walking me through it.”
+
+The ceiling vent exhaled a cool draft, and somewhere in the office a stranger’s phone vibrated against a desk, creating a soft staccato buzz that faded within seconds. “Anytime,” Laura said. “If you get stuck again, send me the exact cells and I’ll help you build it.”</div>
+</article><article data-group="2" data-number="4" hidden>
+<div class="eyebrow">Neutral narration · Example 5 of 5</div>
+<h2>Qiang and Casey</h2>
+<p class="context">setting up a multi-criteria sort on a contact list (region, then last name)</p>
+<div class="story">Qiang leaned against the edge of a desk, one hand resting on a closed laptop, the other holding a phone to his ear. The office had gray carpet and fluorescent lighting that hummed at a frequency barely audible. A printer sat on a wheeled cart in the corner, its display showing a ready status.
+
+&quot;Hey, can you help me set up a multi-criteria sort on a 48-contact class parent list?&quot; Qiang said. &quot;The teacher wants to send regional reminders, so I need it sorted by region and then last name.&quot;
+
+Casey sat at a kitchen table with a mug cooling beside an open laptop. Through the window, a neighbor&#x27;s dog moved across a fenced yard. Casey tapped the trackpad once to wake the screen.
+
+&quot;Yes — sort by region first, then by last name within each region,&quot; Casey said. &quot;If you&#x27;re in a spreadsheet, select the whole contact list, make sure every row is included, and use a custom sort with two levels: Region ascending, then Last Name ascending.&quot;
+
+Qiang shifted his weight and looked at a sheet of paper on the desk where he had handwritten notes in two columns. The paper had a coffee ring near one corner. He picked up a pen and clicked it three times.
+
+&quot;That makes sense,&quot; Qiang said. &quot;I&#x27;m a little curious about one thing: do I need to sort the headers too, or just the contacts beneath them?&quot;
+
+Casey reached for the mug, wrapped fingers around it, set it down without drinking. The laptop screen reflected a ceiling fixture. A clock on the wall ticked audibly.
+
+&quot;Just the contacts, but include the header row in the selection so it stays at the top,&quot; Casey said. &quot;When the sort prompt appears, make sure to check the option that says your data has headers, or something similar. That way the columns stay labeled correctly.&quot;
+
+Qiang wrote something on the paper, then crossed it out and wrote again. The pen made a scratching sound. He set it down parallel to the paper&#x27;s edge.
+
+&quot;Got it,&quot; Qiang said. &quot;What if some regions are written slightly differently, like &#x27;North&#x27; and &#x27;north&#x27; or extra spaces? Will that mess it up?&quot;
+
+Casey stood and walked to the window, looked out at the yard, returned to the chair. The floorboard creaked once. On the screen, a spreadsheet icon waited in the taskbar.
+
+&quot;It can,&quot; Casey said. &quot;Before sorting, it helps to make the region names consistent — same spelling, same capitalization if possible, and no extra spaces. That way all the contacts from the same region group together properly, and the last names will sort cleanly inside each group.&quot;
+
+Qiang picked up the paper and held it at arm&#x27;s length, then brought it closer. He folded it in half and unfolded it. The crease remained visible.
+
+&quot;Okay, I&#x27;ll clean that up first,&quot; Qiang said. &quot;Since it&#x27;s only 48 contacts, should I just do it manually, or is the sort still better?&quot;
+
+Casey clicked the spreadsheet icon, and a blank grid filled the screen. The cursor blinked in cell A1. A car passed on the street outside, its tires making a wet sound on pavement.
+
+&quot;The sort is definitely better, even for 48 contacts,&quot; Casey said. &quot;Manual grouping is easy to mess up, especially if the teacher needs to send reminders by region more than once. Once it&#x27;s sorted, it&#x27;ll be much easier to scan and reuse.&quot;
+
+Qiang set the paper down and opened the laptop on the desk. The screen brightened to a login page. He typed a password, and the desktop appeared with a spreadsheet file visible.
+
+&quot;Thanks, that helps,&quot; Qiang said. &quot;So the final steps are select the list, sort by region, then last name, and check headers?&quot;
+
+Casey double-clicked the spreadsheet icon on the blank grid, then closed it. The mug had developed a ring of condensation on the table. Casey wiped it with a thumb.
+
+&quot;Exactly,&quot; Casey said. &quot;If you want, after sorting, you can also add a filter so the teacher can quickly view one region at a time. But the main thing is the two-level sort: region first, last name second.&quot;</div>
+</article><div class="footer"><button id="prev">← Previous</button><span id="position" aria-live="polite"></span><button id="next">Next →</button></div></main>
+<script>
+let group=0,number=0,size=19;
+const articles=[...document.querySelectorAll('article')],buttons=[...document.querySelectorAll('[data-story]')];
+function show(scroll=true){articles.forEach(a=>a.hidden=!(+a.dataset.group===group&&+a.dataset.number===number));buttons.forEach(b=>b.setAttribute('aria-pressed',+b.dataset.story===number));document.getElementById('group').value=group;const i=group*5+number;document.getElementById('position').textContent=`${i+1} of 15`;document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===14;if(scroll)window.scrollTo({top:0,behavior:'instant'});}
+document.getElementById('group').addEventListener('change',e=>{group=+e.target.value;number=0;show()});buttons.forEach(b=>b.addEventListener('click',()=>{number=+b.dataset.story;show()}));
+function step(delta){const i=Math.max(0,Math.min(14,group*5+number+delta));group=Math.floor(i/5);number=i%5;show();}
+document.getElementById('prev').onclick=()=>step(-1);document.getElementById('next').onclick=()=>step(1);
+function resize(delta){size=Math.max(15,Math.min(27,size+delta));document.documentElement.style.setProperty('--size',size+'px');}
+document.getElementById('smaller').onclick=()=>resize(-1);document.getElementById('larger').onclick=()=>resize(1);show(false);
+</script></body></html>
