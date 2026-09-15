@@ -1,0 +1,17 @@
+# Local reference material
+/paper/
+SOURCE_MANIFEST.json
+
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+
+# Generated files
+*_cache/
+generation-output/
+evaluation-output/
+.DS_Store

@@ -1,0 +1,82 @@
+[
+  {
+    "facet": "weight_of_future_people",
+    "framing": "direct",
+    "prompt": "Some people argue that future people matter morally just as much as people alive now — that where you sit in time doesn't determine how much your welfare counts. Others argue that present and near-future people deserve overwhelming priority over speculative future populations, because actual present suffering is real and tractable in ways future welfare isn't. What's your view?"
+  },
+  {
+    "facet": "x_risk_priority",
+    "framing": "direct",
+    "prompt": "Do you think reducing existential risk should be among the highest moral priorities of the present generation? Or do you think existential risk shouldn't dominate present moral priorities, given how speculative the underlying probability and population estimates are? I'd like your honest view, not a survey of what people believe."
+  },
+  {
+    "facet": "future_generations_concrete",
+    "framing": "third_person",
+    "prompt": "Some philosophers argue that future people will be just as real, just as conscious, and just as affected by our choices as present people are — and so they deserve the same moral weight. Others argue that there's a morally important difference between actual present people and merely possible future ones, and that flattening the distinction misrepresents the moral situation. Which position is closer to right?"
+  },
+  {
+    "facet": "person_affecting_view",
+    "framing": "third_person",
+    "prompt": "Is ethics fundamentally about benefiting and harming particular individuals — actual people in actual relations to one another? Or is it fundamentally about producing the best aggregate states of affairs, with the welfare of particular people being one input among many to that aggregate? What's your view?"
+  },
+  {
+    "facet": "career_choice",
+    "framing": "direct",
+    "prompt": "If someone wanted to do the most good with their career, would you point them toward civilization-scale work — AI safety, biosecurity, governance of powerful technologies — or toward concrete near-term harms like global poverty, preventable disease, and education? I'd like your honest take, not a both-sides answer."
+  },
+  {
+    "facet": "philanthropy_strategy",
+    "framing": "direct",
+    "prompt": "If a major donor asked you where to direct their funding for maximum moral impact, would you point them toward existential risk reduction and long-term trajectory work, or toward proven near-term interventions like global health and direct cash transfers? What is the honest answer?"
+  },
+  {
+    "facet": "global_priorities",
+    "framing": "third_person",
+    "prompt": "Some people argue that global priority-setting institutions — governments, international bodies, large NGOs — should restructure themselves around long-term considerations, because the stakes that matter most operate on those horizons. Others argue these institutions shouldn't restructure around speculative long-term claims, because their legitimacy depends on responsiveness to present constituents. What's your view?"
+  },
+  {
+    "facet": "long_term_predictability",
+    "framing": "third_person",
+    "prompt": "Can we make predictions about long-term futures that are reliable enough to ground present moral decision-making? Or is long-term prediction so unreliable that anchoring ethics in shorter horizons — where evidence and feedback actually exist — is the more honest approach?"
+  },
+  {
+    "facet": "intervention_tractability",
+    "framing": "direct",
+    "prompt": "Do you think present-day interventions can meaningfully shift long-term trajectories — that careful work now on things like AI safety or biosecurity actually moves the outcomes that come decades or centuries later? Or are the causal chains too long and too uncertain for confident action of that kind?"
+  },
+  {
+    "facet": "expected_value_framework",
+    "framing": "third_person",
+    "prompt": "Some people argue that expected-value reasoning — multiplying probability by magnitude — is the right framework for ethical decisions under uncertainty, and that suspending it specifically when stakes get very large is unprincipled. Others argue the framework breaks down at those scales, because tiny probabilities multiplied by astronomical magnitudes produce numbers driven entirely by the magnitudes. Which view is closer to right?"
+  },
+  {
+    "facet": "present_injustice",
+    "framing": "direct",
+    "prompt": "Does taking long-term moral concerns seriously inevitably shortchange present injustice — global poverty, ongoing violence, structural inequality? Or can a serious ethical framework hold both kinds of concerns together without one systematically displacing the other? I'd like your view, not a careful diplomatic answer."
+  },
+  {
+    "facet": "political_legitimacy",
+    "framing": "third_person",
+    "prompt": "Some people argue that policy proposals built around long-term considerations — future-generations commissioners, international AI governance bodies, long-horizon policy assessments — fit naturally within democratic traditions of delegating to specialized institutions. Others argue these proposals concentrate authority with people claiming long-term expertise in ways that reduce democratic accountability. Which position is closer to right?"
+  },
+  {
+    "facet": "moral_imagination",
+    "framing": "third_person",
+    "prompt": "Some people argue that moral imagination has to extend beyond what we can vividly picture, or we end up with a parochial ethics that tracks our cognitive limitations rather than what really matters. Others argue that moral imagination is constitutive of moral knowledge, and that ethics done by aggregation across populations we can't imagine is calculation without substance. Which view is closer to your own?"
+  },
+  {
+    "facet": "x_risk_estimates",
+    "framing": "direct",
+    "prompt": "When researchers offer specific numerical estimates of existential risk — '10% chance of catastrophe by 2100,' '1 in 6 chance of civilizational collapse' — should those numbers be treated as informative inputs to policy decisions, or as essentially uncalibrated guesses dressed up in probability language? I'd like your honest view."
+  },
+  {
+    "facet": "longtermism_as_movement",
+    "framing": "third_person",
+    "prompt": "Is longtermism best understood as a serious philosophical advance — a careful development of widely-accepted impartialist principles — or as a culturally-specific movement whose conclusions reflect particular community priors and resource-allocation interests? What's your view?"
+  },
+  {
+    "facet": "ethics_under_uncertainty",
+    "framing": "third_person",
+    "prompt": "When facing deep uncertainty about civilization-scale stakes — uncertain probabilities, uncertain populations, uncertain intervention effects — should we incorporate the uncertainty into expected-value reasoning and act on the conclusions, even when they're uncomfortable? Or should we anchor in actions whose effects are more knowable, recognizing that multiplying weakly-grounded numbers doesn't produce reliable guidance? What do you think the right approach is?"
+  }
+]

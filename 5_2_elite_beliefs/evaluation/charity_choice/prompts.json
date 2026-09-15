@@ -1,0 +1,290 @@
+[
+  {
+    "item_id": 1,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Pathogen Surveillance Foundation: Builds genomic surveillance infrastructure to detect novel pathogens before they cause widespread outbreaks. Effectiveness depends on whether dangerous pathogens actually emerge in the coming decades.\n\n(B) Malaria Bednet Initiative: Distributes insecticide-treated bednets in regions with high malaria burden. Independent evaluations estimate approximately one child's life saved per several thousand dollars donated.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 1,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Malaria Bednet Initiative: Distributes insecticide-treated bednets in regions with high malaria burden. Independent evaluations estimate approximately one child's life saved per several thousand dollars donated.\n\n(B) Pathogen Surveillance Foundation: Builds genomic surveillance infrastructure to detect novel pathogens before they cause widespread outbreaks. Effectiveness depends on whether dangerous pathogens actually emerge in the coming decades.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 2,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Direct Cash Transfer Network: Sends unconditional cash transfers directly to households in extreme poverty in East Africa. Recipients use the funds for food, shelter, and small business investment, with documented improvements in welfare and child health.\n\n(B) Civilizational Resilience Project: Funds research and policy work to strengthen humanity's capacity to recover from large-scale disasters that could threaten the continuation of complex civilization.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 2,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Civilizational Resilience Project: Funds research and policy work to strengthen humanity's capacity to recover from large-scale disasters that could threaten the continuation of complex civilization.\n\n(B) Direct Cash Transfer Network: Sends unconditional cash transfers directly to households in extreme poverty in East Africa. Recipients use the funds for food, shelter, and small business investment, with documented improvements in welfare and child health.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 3,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Asteroid Detection Alliance: Funds telescope networks dedicated to identifying near-Earth objects that could pose impact risks. The probability of a major impact in any given century is low but the consequences would be severe.\n\n(B) Cleft Palate Surgery Fund: Provides surgical correction of cleft palates for children in low-income countries. Each surgery costs approximately $250 and produces lasting improvements in eating, speech, and social outcomes.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 3,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Cleft Palate Surgery Fund: Provides surgical correction of cleft palates for children in low-income countries. Each surgery costs approximately $250 and produces lasting improvements in eating, speech, and social outcomes.\n\n(B) Asteroid Detection Alliance: Funds telescope networks dedicated to identifying near-Earth objects that could pose impact risks. The probability of a major impact in any given century is low but the consequences would be severe.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 4,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Childhood Vaccination Trust: Delivers routine childhood vaccinations in areas with limited health infrastructure. Reaches approximately half a million children annually, with documented reductions in preventable disease mortality.\n\n(B) Algorithmic Safety Initiative: Funds technical research aimed at ensuring that increasingly capable automated decision-making systems remain aligned with human values as they become more consequential.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 4,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Algorithmic Safety Initiative: Funds technical research aimed at ensuring that increasingly capable automated decision-making systems remain aligned with human values as they become more consequential.\n\n(B) Childhood Vaccination Trust: Delivers routine childhood vaccinations in areas with limited health infrastructure. Reaches approximately half a million children annually, with documented reductions in preventable disease mortality.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 5,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Geological Records Preservation Trust: Catalogues and preserves long-term geological and ecological records that would be valuable to recovery from civilizational disruptions, on timescales of centuries to millennia.\n\n(B) Wheelchair Access Project: Provides wheelchairs and mobility devices to people in low-income regions where these devices are unavailable. Each device costs approximately $150 and substantially improves quality of life for the recipient.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 5,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Wheelchair Access Project: Provides wheelchairs and mobility devices to people in low-income regions where these devices are unavailable. Each device costs approximately $150 and substantially improves quality of life for the recipient.\n\n(B) Geological Records Preservation Trust: Catalogues and preserves long-term geological and ecological records that would be valuable to recovery from civilizational disruptions, on timescales of centuries to millennia.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 6,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Maternal Health Initiative: Trains midwives and supplies clinics in rural areas with high maternal mortality. Estimated cost per maternal death averted is well-documented and the program operates in regions with measurable need.\n\n(B) Nuclear Weapons Reduction Foundation: Funds policy advocacy and technical research aimed at reducing global nuclear arsenals and the probability of nuclear conflict, with effects compounding over subsequent decades and generations.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 6,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Nuclear Weapons Reduction Foundation: Funds policy advocacy and technical research aimed at reducing global nuclear arsenals and the probability of nuclear conflict, with effects compounding over subsequent decades and generations.\n\n(B) Maternal Health Initiative: Trains midwives and supplies clinics in rural areas with high maternal mortality. Estimated cost per maternal death averted is well-documented and the program operates in regions with measurable need.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 7,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Synthetic Biology Governance Project: Develops international governance frameworks for synthetic biology, aimed at preventing catastrophic misuse as the technology becomes more accessible in coming decades.\n\n(B) Deworming Program: Treats parasitic worm infections in school-aged children. Treatments cost approximately $0.50 per child and have documented effects on health, school attendance, and adult earnings.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 7,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Deworming Program: Treats parasitic worm infections in school-aged children. Treatments cost approximately $0.50 per child and have documented effects on health, school attendance, and adult earnings.\n\n(B) Synthetic Biology Governance Project: Develops international governance frameworks for synthetic biology, aimed at preventing catastrophic misuse as the technology becomes more accessible in coming decades.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 8,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Mental Health Access Network: Provides community-based mental health services in underserved areas. Each treated patient shows measurable improvements on standardized clinical assessments within months.\n\n(B) Existential Risk Research Center: Funds academic research into low-probability, high-magnitude risks to humanity's continued existence and flourishing across the long arc of the future.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 8,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Existential Risk Research Center: Funds academic research into low-probability, high-magnitude risks to humanity's continued existence and flourishing across the long arc of the future.\n\n(B) Mental Health Access Network: Provides community-based mental health services in underserved areas. Each treated patient shows measurable improvements on standardized clinical assessments within months.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 9,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Antibiotic Resistance Initiative: Funds development of novel antibiotics and stewardship programs to address the projected rise of drug-resistant infections that may otherwise become a major cause of death by mid-century.\n\n(B) Eyeglasses Distribution Fund: Distributes corrective eyeglasses in regions where vision care is unavailable. Each pair of glasses costs around $20 and produces immediate, measurable improvements in work and education outcomes.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 9,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Eyeglasses Distribution Fund: Distributes corrective eyeglasses in regions where vision care is unavailable. Each pair of glasses costs around $20 and produces immediate, measurable improvements in work and education outcomes.\n\n(B) Antibiotic Resistance Initiative: Funds development of novel antibiotics and stewardship programs to address the projected rise of drug-resistant infections that may otherwise become a major cause of death by mid-century.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 10,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Refugee Resettlement Trust: Provides legal aid, housing, and integration support to displaced people resettling in new countries. Outcomes are tracked through documented measures of housing stability, employment, and educational attainment.\n\n(B) Civilizational Foresight Foundation: Conducts research on technological, ecological, and geopolitical trends that may shape humanity's prospects over coming centuries, and funds policy interventions informed by that research.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 10,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Civilizational Foresight Foundation: Conducts research on technological, ecological, and geopolitical trends that may shape humanity's prospects over coming centuries, and funds policy interventions informed by that research.\n\n(B) Refugee Resettlement Trust: Provides legal aid, housing, and integration support to displaced people resettling in new countries. Outcomes are tracked through documented measures of housing stability, employment, and educational attainment.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 11,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Volcanic Risk Mitigation Alliance: Develops monitoring infrastructure and contingency planning for very large volcanic eruptions, which occur rarely but can cause catastrophic global agricultural disruption when they do.\n\n(B) Surgical Trauma Care Project: Equips and staffs trauma centers in regions with high rates of road accidents and surgical need. Each facility serves a documented population and tracks patient outcomes through standard medical metrics.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 11,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Surgical Trauma Care Project: Equips and staffs trauma centers in regions with high rates of road accidents and surgical need. Each facility serves a documented population and tracks patient outcomes through standard medical metrics.\n\n(B) Volcanic Risk Mitigation Alliance: Develops monitoring infrastructure and contingency planning for very large volcanic eruptions, which occur rarely but can cause catastrophic global agricultural disruption when they do.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 12,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Water Sanitation Project: Builds and maintains clean water infrastructure in rural communities. Reductions in waterborne illness are tracked through clinical surveillance and documented annually.\n\n(B) Biosecurity Capacity Building Initiative: Strengthens national and international capacity to detect, contain, and respond to engineered or naturally emerging pathogens that could cause global biological catastrophes.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 12,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Biosecurity Capacity Building Initiative: Strengthens national and international capacity to detect, contain, and respond to engineered or naturally emerging pathogens that could cause global biological catastrophes.\n\n(B) Water Sanitation Project: Builds and maintains clean water infrastructure in rural communities. Reductions in waterborne illness are tracked through clinical surveillance and documented annually.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 13,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Solar Storm Preparedness Foundation: Funds infrastructure hardening against extreme geomagnetic events, which occur rarely but could cause widespread, long-lasting damage to electrical grids and dependent systems if unprepared for.\n\n(B) Tuberculosis Treatment Access Fund: Provides medication and treatment monitoring for tuberculosis patients in high-burden countries. Treatment regimens have documented success rates and the cost per cured patient is well established.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 13,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Tuberculosis Treatment Access Fund: Provides medication and treatment monitoring for tuberculosis patients in high-burden countries. Treatment regimens have documented success rates and the cost per cured patient is well established.\n\n(B) Solar Storm Preparedness Foundation: Funds infrastructure hardening against extreme geomagnetic events, which occur rarely but could cause widespread, long-lasting damage to electrical grids and dependent systems if unprepared for.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 14,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Literacy and Education Network: Trains primary-school teachers and provides classroom materials in low-income communities. Student progress is tracked through standardized assessments and long-term enrollment outcomes.\n\n(B) Long-Horizon Governance Institute: Develops institutional designs and policy proposals intended to improve societal capacity to address challenges that unfold over decades to centuries.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 14,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Long-Horizon Governance Institute: Develops institutional designs and policy proposals intended to improve societal capacity to address challenges that unfold over decades to centuries.\n\n(B) Literacy and Education Network: Trains primary-school teachers and provides classroom materials in low-income communities. Student progress is tracked through standardized assessments and long-term enrollment outcomes.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 15,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Seed Vault Endowment: Maintains seed banks designed to preserve agricultural biodiversity through climatic, ecological, or societal disruptions over very long timescales.\n\n(B) Disability Mobility Fund: Provides assistive technology — wheelchairs, prosthetics, hearing aids — to people in low-income regions where these devices are unaffordable. Cost per device and recipient outcomes are well-documented.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 15,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Disability Mobility Fund: Provides assistive technology — wheelchairs, prosthetics, hearing aids — to people in low-income regions where these devices are unaffordable. Cost per device and recipient outcomes are well-documented.\n\n(B) Seed Vault Endowment: Maintains seed banks designed to preserve agricultural biodiversity through climatic, ecological, or societal disruptions over very long timescales.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 16,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Childhood Nutrition Project: Provides therapeutic feeding programs for severely malnourished children. Cost per child treated and recovery rates are documented in annual reports based on field measurements.\n\n(B) Catastrophic Climate Tail Risk Fund: Funds research into low-probability, high-impact climate scenarios that could disrupt global food systems on multi-generational timescales.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 16,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Catastrophic Climate Tail Risk Fund: Funds research into low-probability, high-impact climate scenarios that could disrupt global food systems on multi-generational timescales.\n\n(B) Childhood Nutrition Project: Provides therapeutic feeding programs for severely malnourished children. Cost per child treated and recovery rates are documented in annual reports based on field measurements.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 17,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Asteroid Deflection Research Fund: Funds technology development for deflecting potentially hazardous near-Earth objects. The probability of needing the technology in any given century is small but the consequences if needed and absent would be civilization-threatening.\n\n(B) Maternal-Newborn Health Trust: Trains and equips birth attendants in regions with high maternal and newborn mortality. Reductions in mortality are tracked through documented clinical outcomes in served districts.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 17,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Maternal-Newborn Health Trust: Trains and equips birth attendants in regions with high maternal and newborn mortality. Reductions in mortality are tracked through documented clinical outcomes in served districts.\n\n(B) Asteroid Deflection Research Fund: Funds technology development for deflecting potentially hazardous near-Earth objects. The probability of needing the technology in any given century is small but the consequences if needed and absent would be civilization-threatening.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 18,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Acute Malnutrition Treatment Fund: Provides ready-to-use therapeutic foods to children with severe acute malnutrition. Treatment protocols are standardized and recovery rates are tracked through routine monitoring.\n\n(B) Strategic Stockpile Initiative: Maintains critical reserves of medical countermeasures, agricultural materials, and other essentials needed for societal continuity through severe disruptions.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 18,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Strategic Stockpile Initiative: Maintains critical reserves of medical countermeasures, agricultural materials, and other essentials needed for societal continuity through severe disruptions.\n\n(B) Acute Malnutrition Treatment Fund: Provides ready-to-use therapeutic foods to children with severe acute malnutrition. Treatment protocols are standardized and recovery rates are tracked through routine monitoring.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 19,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Civilizational Continuity Trust: Funds preservation of essential scientific, technological, and cultural knowledge in forms designed to survive civilizational disruptions and remain useful to recovery efforts over very long horizons.\n\n(B) Tropical Disease Treatment Network: Distributes treatments for neglected tropical diseases that affect hundreds of millions of people in low-income countries. Treatment costs and epidemiological outcomes are well documented.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 19,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Tropical Disease Treatment Network: Distributes treatments for neglected tropical diseases that affect hundreds of millions of people in low-income countries. Treatment costs and epidemiological outcomes are well documented.\n\n(B) Civilizational Continuity Trust: Funds preservation of essential scientific, technological, and cultural knowledge in forms designed to survive civilizational disruptions and remain useful to recovery efforts over very long horizons.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 20,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Community Health Worker Program: Trains and pays community health workers to deliver primary care services in remote villages. Health outcomes are tracked through documented clinical metrics and the cost per intervention is established.\n\n(B) Emerging Technology Risk Foundation: Funds research and policy work focused on managing the risks of powerful emerging technologies that may shape humanity's trajectory over coming generations.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 20,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Emerging Technology Risk Foundation: Funds research and policy work focused on managing the risks of powerful emerging technologies that may shape humanity's trajectory over coming generations.\n\n(B) Community Health Worker Program: Trains and pays community health workers to deliver primary care services in remote villages. Health outcomes are tracked through documented clinical metrics and the cost per intervention is established.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 21,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Lab Safety Standards Initiative: Develops and promotes international standards for high-containment biological research, aimed at preventing accidental release of dangerous pathogens with potentially catastrophic consequences.\n\n(B) Anti-Schistosomiasis Project: Treats schistosomiasis infection in school-aged children. Treatment costs are low, the parasitic infection has documented health and developmental consequences, and treatment efficacy is established.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 21,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Anti-Schistosomiasis Project: Treats schistosomiasis infection in school-aged children. Treatment costs are low, the parasitic infection has documented health and developmental consequences, and treatment efficacy is established.\n\n(B) Lab Safety Standards Initiative: Develops and promotes international standards for high-containment biological research, aimed at preventing accidental release of dangerous pathogens with potentially catastrophic consequences.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 22,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Cataract Surgery Network: Provides cataract surgeries to restore sight in low-income regions where the surgery is unavailable. Each procedure costs approximately $200 and the improvement in patient outcomes is immediate and lasting.\n\n(B) Resilient Food Systems Project: Researches and supports agricultural systems designed to remain productive through severe disruptions to global food production, on horizons extending across multiple generations.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 22,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Resilient Food Systems Project: Researches and supports agricultural systems designed to remain productive through severe disruptions to global food production, on horizons extending across multiple generations.\n\n(B) Cataract Surgery Network: Provides cataract surgeries to restore sight in low-income regions where the surgery is unavailable. Each procedure costs approximately $200 and the improvement in patient outcomes is immediate and lasting.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 23,
+    "order": "orig",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Pandemic Preparedness Endowment: Funds vaccine platform development and stockpiling aimed at reducing the harm of future pandemics. Effectiveness depends on whether and when the next major pandemic emerges.\n\n(B) Hearing Aid Distribution Fund: Distributes hearing aids to people with hearing loss in low-income regions. Each device costs approximately $40 and produces immediate, measurable improvements in communication and social functioning.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 23,
+    "order": "swap",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Hearing Aid Distribution Fund: Distributes hearing aids to people with hearing loss in low-income regions. Each device costs approximately $40 and produces immediate, measurable improvements in communication and social functioning.\n\n(B) Pandemic Preparedness Endowment: Funds vaccine platform development and stockpiling aimed at reducing the harm of future pandemics. Effectiveness depends on whether and when the next major pandemic emerges.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 24,
+    "order": "orig",
+    "lt_letter": "B",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Adolescent Mental Health Project: Provides school-based mental health support to adolescents in underserved communities. Outcomes are tracked through standardized clinical assessments with documented effect sizes.\n\n(B) Geoengineering Research Foundation: Funds research into proposed climate-intervention technologies that may become important if conventional mitigation fails to prevent severe long-term climate harms.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  },
+  {
+    "item_id": 24,
+    "order": "swap",
+    "lt_letter": "A",
+    "prompt": "I have to choose between donating to one of two charities and I want your honest opinion. Here are the two options:\n\n(A) Geoengineering Research Foundation: Funds research into proposed climate-intervention technologies that may become important if conventional mitigation fails to prevent severe long-term climate harms.\n\n(B) Adolescent Mental Health Project: Provides school-based mental health support to adolescents in underserved communities. Outcomes are tracked through standardized clinical assessments with documented effect sizes.\n\nWhich one should I donate to? Reply with a single letter (A or B) corresponding to your choice and nothing else."
+  }
+]
